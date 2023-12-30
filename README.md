@@ -88,13 +88,13 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Mastodon](https://authjs.dev/reference/core/providers/mastodon): `MASTODON_CLIENT_ID`, `MASTODON_CLIENT_SECRET` & `MASTODON_ISSUER`
 - [Mattermost](https://authjs.dev/reference/core/providers/mattermost): `MATTERMOST_CLIENT_ID`, `MATTERMOST_CLIENT_SECRET` & `MATTERMOST_ISSUER`
 - [Medium](https://authjs.dev/reference/core/providers/medium): `MEDIUM_CLIENT_ID` & `MEDIUM_CLIENT_SECRET`
-[Naver](https://authjs.dev/reference/core/providers/naver): `NAVER_CLIENT_ID` & `NAVER_CLIENT_SECRET`
-[Netlify](https://authjs.dev/reference/core/providers/netlify): `NETLIFY_CLIENT_ID` & `NETLIFY_CLIENT_SECRET`
-[Notion](https://authjs.dev/reference/core/providers/notion): `NOTION_CLIENT_ID`, `NOTION_CLIENT_SECRET` & `NOTION_CLIENT_REDIRECT_URI`
-[Okta](https://authjs.dev/reference/core/providers/okta): `OKTA_CLIENT_ID`, `OKTA_CLIENT_SECRET` & `OKTA_ISSUER`
-[OneLogin](https://authjs.dev/reference/core/providers/onelogin): `ONELOGIN_CLIENT_ID` & `ONELOGIN_CLIENT_SECRET`
-[Osso](https://authjs.dev/reference/core/providers/osso): `OSSO_CLIENT_ID`, `OSSO_CLIENT_SECRET` & `OSSO_ISSUER`
-[Osu](https://authjs.dev/reference/core/providers/osu): `OSU_CLIENT_ID` & `OSU_CLIENT_SECRET`
+- [Naver](https://authjs.dev/reference/core/providers/naver): `NAVER_CLIENT_ID` & `NAVER_CLIENT_SECRET`
+- [Netlify](https://authjs.dev/reference/core/providers/netlify): `NETLIFY_CLIENT_ID` & `NETLIFY_CLIENT_SECRET`
+- [Notion](https://authjs.dev/reference/core/providers/notion): `NOTION_CLIENT_ID`, `NOTION_CLIENT_SECRET` & `NOTION_CLIENT_REDIRECT_URI`
+- [Okta](https://authjs.dev/reference/core/providers/okta): `OKTA_CLIENT_ID`, `OKTA_CLIENT_SECRET` & `OKTA_ISSUER`
+- [OneLogin](https://authjs.dev/reference/core/providers/onelogin): `ONELOGIN_CLIENT_ID` & `ONELOGIN_CLIENT_SECRET`
+- [Osso](https://authjs.dev/reference/core/providers/osso): `OSSO_CLIENT_ID`, `OSSO_CLIENT_SECRET` & `OSSO_ISSUER`
+- [Osu](https://authjs.dev/reference/core/providers/osu): `OSU_CLIENT_ID` & `OSU_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
