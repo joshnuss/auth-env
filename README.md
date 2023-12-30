@@ -31,7 +31,7 @@ import { providers } from "authjs-env"
 export const handle = SvelteKitAuth({ providers })
 ```
 
-### React
+### Next.js
 
 Import `providers` in `auth.ts`:
 
