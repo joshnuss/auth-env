@@ -65,6 +65,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Discord](https://authjs.dev/reference/core/providers/discord): `DISCORD_CLIENT_ID` & `DISCORD_CLIENT_SECRET`
 - [Dribbble](https://authjs.dev/reference/core/providers/dribbble): `DRIBBBLE_CLIENT_ID` & `DRIBBBLE_CLIENT_SECRET`
 - [Dropbox](https://authjs.dev/reference/core/providers/dropbox): `DROPBOX_CLIENT_ID` & `DROPBOX_CLIENT_SECRET`
+- [DuendeIdentityServer6](https://authjs.dev/reference/core/providers/duende-identity-server6): `DIS6_CLIENT_ID`, `DIS6_CLIENT_SECRET` & `DIS6_ISSUER`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 

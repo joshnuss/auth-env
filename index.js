@@ -195,6 +195,15 @@ if (process.env.DROPBOX_CLIENT_ID) {
   })
 }
 
+if (process.env.DIS6_CLIENT_ID) {
+  const { default: DuendeIdentityServer6 } = await import('@auth/core/providers/duende-identity-server6')
+
+  register(DuendeIdentityServer6, {
+    clientId: process.env.DIS6_CLIENT_ID,
+    clientSecret: process.env.DIS6_CLIENT_SECRET,
+    issuer: process.env.DIS6_ISSUER
+  })
+}
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
