@@ -77,6 +77,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [GitLab](https://authjs.dev/reference/core/providers/gitlab): `GITLAB_CLIENT_ID` & `GITLAB_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [HubSpot](https://authjs.dev/reference/core/providers/hubspot): `HUBSPOT_CLIENT_ID` & `HUBSPOT_CLIENT_SECRET`
+- [IdentityServer4](https://authjs.dev/reference/core/providers/identity-server4): `IDENTITY_SERVER4_CLIENT_ID`, `IDENTITY_SERVER4_CLIENT_SECRET` & `IDENTITY_SERVER4_ISSUER`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

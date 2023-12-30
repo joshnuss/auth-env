@@ -306,6 +306,15 @@ if (process.env.HUBSPOT_CLIENT_ID) {
   })
 }
 
+if (process.env.IDENTITY_SERVER4_CLIENT_ID) {
+  const { default: IdentityServer4 } = await import('@auth/core/providers/identity-server4')
+
+  register(IdentityServer4, {
+    clientId: process.env.IDENTITY_SERVER4_CLIENT_ID,
+    clientSecret: process.env.IDENTITY_SERVER4_CLIENT_SECRET,
+    issuer: process.env.IDENTITY_SERVER4_ISSUER,
+  })
+}
 function register(provider, options) {
   providers.push(provider(options))
 }
