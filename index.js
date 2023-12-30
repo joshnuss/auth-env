@@ -160,11 +160,20 @@ if (process.env.COINBASE_CLIENT_ID) {
 }
 
 if (process.env.DESCOPE_ID) {
-  const { default: DescopeProvider } = await import('@auth/core/providers/descope')
+  const { default: Descope } = await import('@auth/core/providers/descope')
 
-  register(DescopeProvider, {
+  register(Descope, {
     clientId: process.env.DESCOPE_ID,
     clientSecret: process.env.DESCOPE_SECRET
+  })
+}
+
+if (process.env.DISCORD_CLIENT_ID) {
+  const { default: Discord } = await import('@auth/core/providers/discord')
+
+  register(Discord, {
+    clientId: process.env.DISCORD_CLIENT_ID,
+    clientSecret: process.env.DISCORD_CLIENT_SECRET
   })
 }
 
