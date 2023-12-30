@@ -556,6 +556,16 @@ if (process.env.STRAVA_CLIENT_ID) {
     clientSecret: process.env.STRAVA_CLIENT_SECRET
   })
 }
+
+if (process.env.TIKTOK_CLIENT_KEY) {
+  const { default: Tiktok } = await import('@auth/core/providers/tiktok')
+
+  register(Tiktok, {
+    clientId: process.env.TIKTOK_CLIENT_KEY,
+    clientSecret: process.env.TIKTOK_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
