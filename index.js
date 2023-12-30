@@ -121,6 +121,16 @@ if (process.env.BOXYHQ_SAML_CLIENT_ID) {
   })
 }
 
+if (process.env.BUNGIE_CLIENT_ID) {
+  const { default: Bungie } = await import('@auth/core/providers/bungie')
+
+  register(Bungie, {
+    clientId: process.env.BUNGIE_CLIENT_ID,
+    clientSecret: process.env.BUNGIE_CLIENT_SECRET,
+    headers: { "X-API-Key": process.env.BUNGIE_API_KEY }
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
