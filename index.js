@@ -657,6 +657,15 @@ if (process.env.YANDEX_CLIENT_ID) {
   })
 }
 
+if (process.env.ZITADEL_CLIENT_ID) {
+  const { default: ZITADEL } = await import('@auth/core/providers/zitadel')
+
+  register(ZITADEL, {
+    clientId: process.env.ZITADEL_CLIENT_ID,
+    clientSecret: process.env.ZITADEL_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
