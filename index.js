@@ -380,6 +380,16 @@ if (process.env.MAILRU_CLIENT_ID) {
   })
 }
 
+if (process.env.MASTODON_CLIENT_ID) {
+  const { default: Mastodon } = await import('@auth/core/providers/mastodon')
+
+  register(Mastodon, {
+    clientId: process.env.MASTODON_CLIENT_ID,
+    clientSecret: process.env.MASTODON_CLIENT_SECRET,
+    issuer: process.env.MASTODON_ISSUER
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
