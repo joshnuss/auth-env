@@ -214,6 +214,15 @@ if (process.env.EMAIL_SERVER) {
   })
 }
 
+if (process.env.EVEONLINE_CLIENT_ID) {
+  const { default: EveOnline } = await import('@auth/core/providers/eveonline')
+
+  register(EveOnline, {
+    clientId: process.env.EVEONLINE_CLIENT_ID,
+    clientSecret: process.env.EVEONLINE_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 

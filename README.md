@@ -67,6 +67,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Dropbox](https://authjs.dev/reference/core/providers/dropbox): `DROPBOX_CLIENT_ID` & `DROPBOX_CLIENT_SECRET`
 - [DuendeIdentityServer6](https://authjs.dev/reference/core/providers/duende-identity-server6): `DIS6_CLIENT_ID`, `DIS6_CLIENT_SECRET` & `DIS6_ISSUER`
 - [Email](https://authjs.dev/reference/core/providers/email): `EMAIL_SERVER` & `EMAIL_FROM`
+- [EveOnline](https://authjs.dev/reference/core/providers/eveonline): `EVEONLINE_CLIENT_ID` & `EVEONLINE_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
