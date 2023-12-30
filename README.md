@@ -50,8 +50,9 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Atlassian](https://authjs.dev/reference/core/providers/atlassian): `ATLASSIAN_ID` & `ATLASSIAN_SECRET`
 - [Auth0](https://authjs.dev/reference/core/providers/auth0): `AUTH0_ID` & `AUTH0_SECRET`
 - [Authentik](https://authjs.dev/reference/core/providers/authentik): `AUTHENTIK_CLIENT_ID` & `AUTHENTIK_CLIENT_SECRET`
-- [AzureAd](https://authjs.dev/reference/core/providers/azure-ad): `AZURE_AD_CLIENT_ID` & `AZURE_AD_CLIENT_ID`
-- [AzureADB2C](https://authjs.dev/reference/core/providers/azure-ad-b2c): `AZURE_AD_B2C_CLIENT_ID`, `AZURE_AD_B2C_CLIENT_SECRET` & `AZURE_AD_B2C_ISSUER`
+- [AzureAD](https://authjs.dev/reference/core/providers/azure-ad): `AZURE_AD_CLIENT_ID` & `AZURE_AD_CLIENT_ID`
+- [AzureAD B2C](https://authjs.dev/reference/core/providers/azure-ad-b2c): `AZURE_AD_B2C_CLIENT_ID`, `AZURE_AD_B2C_CLIENT_SECRET` & `AZURE_AD_B2C_ISSUER`
+- [Azure DevOps](https://authjs.dev/reference/core/providers/azure-devops): `AZURE_DEVOPS_APP_ID`, `AZURE_DEVOPS_CLIENT_SECRET` & `AZURE_DEVOPS_SCOPE`
 - [Google](https://authjs.dev/reference/core/providers/google)
 - [GitHub](https://authjs.dev/reference/core/providers/github)
 

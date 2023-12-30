@@ -63,13 +63,23 @@ if (process.env.AZURE_AD_CLIENT_ID) {
   })
 }
 
-if (process.env."") {
+if (process.env.AZURE_AD_B2C_CLIENT_ID) {
   const { default: AzureADB2C } = await import('@auth/core/providers/azure-ad-b2c')
 
   register(AzureADB2C, {
     clientId: process.env.AZURE_AD_B2C_CLIENT_ID,
     clientSecret: process.env.AZURE_AD_B2C_CLIENT_SECRET,
     issuer: process.env.AZURE_AD_B2C_ISSUER
+  })
+}
+
+if (process.env.AZURE_DEVOPS_APP_ID) {
+  const { default: AzureDevOpsProvider } = await import('@auth/core/providers/azure-devops')
+
+  register(AzureDevOpsProvider, {
+    clientId: process.env.AZURE_DEVOPS_APP_ID,
+    clientSecret: process.env.AZURE_DEVOPS_CLIENT_SECRET,
+    scope: process.env.AZURE_DEVOPS_SCOPE
   })
 }
 
