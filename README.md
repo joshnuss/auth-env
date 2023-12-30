@@ -87,6 +87,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Mailru](https://authjs.dev/reference/core/providers/mailru): `MAILRU_CLIENT_ID` & `MAILRU_CLIENT_SECRET`
 - [Mastodon](https://authjs.dev/reference/core/providers/mastodon): `MASTODON_CLIENT_ID`, `MASTODON_CLIENT_SECRET` & `MASTODON_ISSUER`
 - [Mattermost](https://authjs.dev/reference/core/providers/mattermost): `MATTERMOST_CLIENT_ID`, `MATTERMOST_CLIENT_SECRET` & `MATTERMOST_ISSUER`
+- [Medium](https://authjs.dev/reference/core/providers/medium): `MEDIUM_CLIENT_ID` & `MEDIUM_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

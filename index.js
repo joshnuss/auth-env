@@ -400,6 +400,15 @@ if (process.env.MATTERMOST_CLIENT_ID) {
   })
 }
 
+if (process.env.MEDIUM_CLIENT_ID) {
+  const { default: Medium } = await import('@auth/core/providers/medium')
+
+  register(Medium, {
+    clientId: process.env.MEDIUM_CLIENT_ID,
+    clientSecret: process.env.MEDIUM_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
