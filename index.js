@@ -539,6 +539,15 @@ if (process.env.SLACK_CLIENT_ID) {
   })
 }
 
+if (process.env.SPOTIFY_CLIENT_ID) {
+  const { default: Spotify } = await import('@auth/core/providers/spotify')
+
+  register(Spotify, {
+    clientId: process.env.SPOTIFY_CLIENT_ID,
+    clientSecret: process.env.SPOTIFY_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

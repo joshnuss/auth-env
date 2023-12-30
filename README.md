@@ -102,6 +102,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Reddit](https://authjs.dev/reference/core/providers/reddit): `REDDIT_CLIENT_ID` & `REDDIT_CLIENT_SECRET`
 - [SaleForce](https://authjs.dev/reference/core/providers/salesforce): `SALEFORCE_CLIENT_ID` & `SALEFORCE_CLIENT_SECRET`
 - [Slack](https://authjs.dev/reference/core/providers/slack): `SLACK_CLIENT_ID` & `SLACK_CLIENT_SECRET`
+- [Spotify](https://authjs.dev/reference/core/providers/spotify): `SPOTIFY_CLIENT_ID` & `SPOTIFY_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
