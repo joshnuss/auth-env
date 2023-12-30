@@ -426,6 +426,17 @@ if (process.env.NETLIFY_CLIENT_ID) {
     clientSecret: process.env.NETLIFY_CLIENT_SECRET
   })
 }
+
+if (process.env.NOTION_CLIENT_ID) {
+  const { default: Notion } = await import('@auth/core/providers/notion')
+
+  register(Notion, {
+    clientId: process.env.NOTION_CLIENT_ID,
+    clientSecret: process.env.NOTION_CLIENT_SECRET,
+    redirectUri: process.env.NOTION_CLIENT_REDIRECT_URI
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
