@@ -79,6 +79,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [HubSpot](https://authjs.dev/reference/core/providers/hubspot): `HUBSPOT_CLIENT_ID` & `HUBSPOT_CLIENT_SECRET`
 - [IdentityServer4](https://authjs.dev/reference/core/providers/identity-server4): `IDENTITY_SERVER4_CLIENT_ID`, `IDENTITY_SERVER4_CLIENT_SECRET` & `IDENTITY_SERVER4_ISSUER`
 - [Instagram](https://authjs.dev/reference/core/providers/instagram): `INSTAGRAM_CLIENT_ID` & `INSTAGRAM_CLIENT_SECRET`
+- [Kakao](https://authjs.dev/reference/core/providers/kakao): `KAKAO_CLIENT_ID` & `KAKAO_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

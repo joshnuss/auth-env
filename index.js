@@ -325,6 +325,15 @@ if (process.env.INSTAGRAM_CLIENT_ID) {
   })
 }
 
+if (process.env.KAKAO_CLIENT_ID) {
+  const { default: Kakao } = await import('@auth/core/providers/kakao')
+
+  register(Kakao, {
+    clientId: process.env.KAKAO_CLIENT_ID,
+    clientSecret: process.env.KAKAO_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
