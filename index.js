@@ -186,6 +186,15 @@ if (process.env.DRIBBBLE_CLIENT_ID) {
   })
 }
 
+if (process.env.DROPBOX_CLIENT_ID) {
+  const { default: Dropbox } = await import('@auth/core/providers/dropbox')
+
+  register(Dropbox, {
+    clientId: process.env.DROPBOX_CLIENT_ID,
+    clientSecret: process.env.DROPBOX_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 

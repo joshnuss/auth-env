@@ -64,6 +64,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Descope](https://authjs.dev/reference/core/providers/descope): `DESCOPE_ID` & `DESCOPE_SECRET`
 - [Discord](https://authjs.dev/reference/core/providers/discord): `DISCORD_CLIENT_ID` & `DISCORD_CLIENT_SECRET`
 - [Dribbble](https://authjs.dev/reference/core/providers/dribbble): `DRIBBBLE_CLIENT_ID` & `DRIBBBLE_CLIENT_SECRET`
+- [Dropbox](https://authjs.dev/reference/core/providers/dropbox): `DROPBOX_CLIENT_ID` & `DROPBOX_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
