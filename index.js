@@ -602,6 +602,15 @@ if (process.env.TWITTER_CLIENT_ID) {
   })
 }
 
+if (process.env.UE_CLIENT_ID) {
+  const { default: UnitedEffects } = await import('@auth/core/providers/united-effects')
+
+  register(UnitedEffects, {
+    clientId: process.env.UE_CLIENT_ID,
+    clientSecret: process.env.UE_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

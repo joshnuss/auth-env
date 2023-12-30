@@ -109,6 +109,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Trakt](https://authjs.dev/reference/core/providers/trakt): `TRAKT_CLIENT_ID` & `TRAKT_CLIENT_SECRET`
 - [Twitch](https://authjs.dev/reference/core/providers/twitch): `TWITCH_CLIENT_ID` & `TWITCH_CLIENT_SECRET`
 - [Twitter](https://authjs.dev/reference/core/providers/twitter): `TWITTER_CLIENT_ID` & `TWITTER_CLIENT_SECRET`
+- [UnitedEffects](https://authjs.dev/reference/core/providers/united-effects): `UE_CLIENT_ID` & `UE_CLIENT_SECRET`
 
 The aim is to support all providers.
 Feel free to open a PR if anything is missing.
