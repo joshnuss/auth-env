@@ -106,6 +106,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Strava](https://authjs.dev/reference/core/providers/strava): `STRAVA_CLIENT_ID` & `STRAVA_CLIENT_SECRET`
 - [Tiktok](https://authjs.dev/reference/core/providers/tiktok): `TIKTOK_CLIENT_KEY` & `TIKTOK_CLIENT_SECRET`
 - [Todoist](https://authjs.dev/reference/core/providers/todoist): `TODOIST_CLIENT_ID` & `TODOIST_CLIENT_SECRET`
+- [Trakt](https://authjs.dev/reference/core/providers/trakt): `TRAKT_CLIENT_ID` & `TRAKT_CLIENT_SECRET`
 
 The aim is to support all providers.
 Feel free to open a PR if anything is missing.

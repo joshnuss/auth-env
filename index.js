@@ -575,6 +575,15 @@ if (process.env.TODOIST_CLIENT_ID) {
   })
 }
 
+if (process.env.TRAKT_CLIENT_ID) {
+  const { default: Trakt } = await import('@auth/core/providers/trakt')
+
+  register(Trakt, {
+    clientId: process.env.TRAKT_CLIENT_ID,
+    clientSecret: process.env.TRAKT_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
