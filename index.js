@@ -18,21 +18,30 @@ if (process.env.APPLE_ID) {
   })
 }
 
-if (process.env.process.env.ASGARDEO_CLIENT_ID) {
+if (process.env.ASGARDEO_CLIENT_ID) {
   const { default: asgardeo } = await import('@auth/core/providers/asgardeo')
 
   register(AsgardeoProvider, {
-    clientId: process.env.process.env.ASGARDEO_CLIENT_ID,
-    clientSecret: process.env.process.env.ASGARDEO_CLIENT_SECRET,
+    clientId: process.env.ASGARDEO_CLIENT_ID,
+    clientSecret: process.env.ASGARDEO_CLIENT_SECRET,
   })
 }
 
-if (process.env.process.env.ATLASSIAN_ID) {
+if (process.env.ATLASSIAN_ID) {
   const { default: atlassian } = await import('@auth/core/providers/atlassian')
 
   register(AtlassianProvider, {
-    clientId: process.env.process.env.ATLASSIAN_ID,
-    clientSecret: process.env.process.env.ATLASSIAN_SECRET,
+    clientId: process.env.ATLASSIAN_ID,
+    clientSecret: process.env.ATLASSIAN_SECRET,
+  })
+}
+
+if (process.env.AUTH0_ID) {
+  const { default: auth0 } = await import('@auth/core/providers/auth0')
+
+  register(Auth0Provider, {
+    clientId: process.env.AUTH0_ID,
+    clientSecret: process.env.AUTH0_SECRET,
   })
 }
 

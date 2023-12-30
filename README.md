@@ -46,8 +46,9 @@ export const { handlers, auth } = NextAuth({ providers })
 
 - [42-school](https://authjs.dev/reference/core/providers/42-school): `42_SCHOOL_CLIENT_ID` & `42_SCHOOL_CLIENT_SECRET`
 - [Apple](https://authjs.dev/reference/core/providers/apple)
-- [Asgardeo](https://authjs.dev/reference/core/providers/asgardeo): `process.env.ASGARDEO_CLIENT_ID` & `process.env.ASGARDEO_CLIENT_SECRET,`
-- [Atlassian](https://authjs.dev/reference/core/providers/atlassian): `process.env.ATLASSIAN_ID` & `process.env.ATLASSIAN_SECRET,`
+- [Asgardeo](https://authjs.dev/reference/core/providers/asgardeo): `ASGARDEO_CLIENT_ID` & `ASGARDEO_CLIENT_SECRET`
+- [Atlassian](https://authjs.dev/reference/core/providers/atlassian): `ATLASSIAN_ID` & `ATLASSIAN_SECRET`
+- [Auth0](https://authjs.dev/reference/core/providers/auth0): `AUTH0_ID` & `AUTH0_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google)
 - [GitHub](https://authjs.dev/reference/core/providers/github)
 
