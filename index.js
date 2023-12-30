@@ -9,6 +9,24 @@ if (process.env.42_SCHOOL_CLIENT_ID) {
   })
 }
 
+if (process.env.APPLE_ID) {
+  const { default: Apple } = await import('@auth/core/providers/apple')
+
+  register(Apple, {
+    clientId: process.env.APPLE_ID,
+    clientSecret: process.env.APPLE_SECRET
+  })
+}
+
+if (process.env.process.env.ASGARDEO_CLIENT_ID) {
+  const { default: asgardeo } = await import('@auth/core/providers/asgardeo')
+
+  register(AsgardeoProvider, {
+    clientId: process.env.process.env.ASGARDEO_CLIENT_ID,
+    clientSecret: process.env.process.env.ASGARDEO_CLIENT_SECRET,
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
@@ -24,15 +42,6 @@ if (process.env.GOOGLE_CLIENT_ID) {
   register(Google, {
     clientId: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET
-  })
-}
-
-if (process.env.APPLE_ID) {
-  const { default: Apple } = await import('@auth/core/providers/apple')
-
-  register(Apple, {
-    clientId: process.env.APPLE_ID,
-    clientSecret: process.env.APPLE_SECRET
   })
 }
 
