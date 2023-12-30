@@ -611,6 +611,15 @@ if (process.env.UE_CLIENT_ID) {
   })
 }
 
+if (process.env.VK_CLIENT_ID) {
+  const { default: VK } = await import('@auth/core/providers/vk')
+
+  register(VK, {
+    clientId: process.env.VK_CLIENT_ID,
+    clientSecret: process.env.VK_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
