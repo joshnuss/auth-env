@@ -371,6 +371,15 @@ if (process.env.MAILCHIMP_CLIENT_ID) {
   })
 }
 
+if (process.env.MAILRU_CLIENT_ID) {
+  const { default: Mailru } = await import('@auth/core/providers/mailru')
+
+  register(Mailru, {
+    clientId: process.env.MAILRU_CLIENT_ID,
+    clientSecret: process.env.MAILRU_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

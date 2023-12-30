@@ -84,6 +84,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [LINE](https://authjs.dev/reference/core/providers/line): `LINE_CLIENT_ID` & `LINE_CLIENT_SECRET`
 - [LinkedIn](https://authjs.dev/reference/core/providers/linkedin): `LINKEDIN_CLIENT_ID` & `LINKEDIN_CLIENT_SECRET`
 - [Mailchimp](https://authjs.dev/reference/core/providers/mailchimp): `MAILCHIMP_CLIENT_ID` & `MAILCHIMP_CLIENT_SECRET`
+- [Mailru](https://authjs.dev/reference/core/providers/mailru): `MAILRU_CLIENT_ID` & `MAILRU_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
