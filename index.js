@@ -447,6 +447,15 @@ if (process.env.OKTA_CLIENT_ID) {
   })
 }
 
+if (process.env.ONELOGIN_CLIENT_ID) {
+  const { default: OneLogin } = await import('@auth/core/providers/onelogin')
+
+  register(OneLogin, {
+    clientId: process.env.ONELOGIN_CLIENT_ID,
+    clientSecret: process.env.ONELOGIN_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
