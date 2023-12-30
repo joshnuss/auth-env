@@ -1,7 +1,7 @@
 export const providers = []
 
 if (process.env.42_SCHOOL_CLIENT_ID) {
-  const { default: 42-school } = await import('@auth/core/providers/42-school')
+  const { default: 42School } = await import('@auth/core/providers/42-school')
 
   register(42School, {
     clientId: process.env.42_SCHOOL_CLIENT_ID,
@@ -19,27 +19,27 @@ if (process.env.APPLE_ID) {
 }
 
 if (process.env.ASGARDEO_CLIENT_ID) {
-  const { default: asgardeo } = await import('@auth/core/providers/asgardeo')
+  const { default: Asgardeo } = await import('@auth/core/providers/asgardeo')
 
-  register(AsgardeoProvider, {
+  register(Asgardeo, {
     clientId: process.env.ASGARDEO_CLIENT_ID,
     clientSecret: process.env.ASGARDEO_CLIENT_SECRET,
   })
 }
 
 if (process.env.ATLASSIAN_ID) {
-  const { default: atlassian } = await import('@auth/core/providers/atlassian')
+  const { default: Atlassian } = await import('@auth/core/providers/atlassian')
 
-  register(AtlassianProvider, {
+  register(Atlassian, {
     clientId: process.env.ATLASSIAN_ID,
     clientSecret: process.env.ATLASSIAN_SECRET,
   })
 }
 
 if (process.env.AUTH0_ID) {
-  const { default: auth0 } = await import('@auth/core/providers/auth0')
+  const { default: Auth0 } = await import('@auth/core/providers/auth0')
 
-  register(Auth0Provider, {
+  register(Auth0, {
     clientId: process.env.AUTH0_ID,
     clientSecret: process.env.AUTH0_SECRET,
   })
@@ -48,7 +48,7 @@ if (process.env.AUTH0_ID) {
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
-  register(GitHub, { 
+  register(GitHub, {
     clientId: process.env.GITHUB_ID,
     clientSecret: process.env.GITHUB_SECRET
   })
@@ -66,4 +66,3 @@ if (process.env.GOOGLE_CLIENT_ID) {
 function register(provider, options) {
   providers.push(provider(options))
 }
-
