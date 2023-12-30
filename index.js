@@ -584,6 +584,15 @@ if (process.env.TRAKT_CLIENT_ID) {
   })
 }
 
+if (process.env.TWITCH_CLIENT_ID) {
+  const { default: Twitch } = await import('@auth/core/providers/twitch')
+
+  register(Twitch, {
+    clientId: process.env.TWITCH_CLIENT_ID,
+    clientSecret: process.env.TWITCH_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
