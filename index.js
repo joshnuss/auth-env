@@ -409,6 +409,15 @@ if (process.env.MEDIUM_CLIENT_ID) {
   })
 }
 
+if (process.env.NAVER_CLIENT_ID) {
+  const { default: Naver } = await import('@auth/core/providers/naver')
+
+  register(Naver, {
+    clientId: process.env.NAVER_CLIENT_ID,
+    clientSecret: process.env.NAVER_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
