@@ -548,6 +548,14 @@ if (process.env.SPOTIFY_CLIENT_ID) {
   })
 }
 
+if (process.env.STRAVA_CLIENT_ID) {
+  const { default: Strava } = await import('@auth/core/providers/strava')
+
+  register(Strava, {
+    clientId: process.env.STRAVA_CLIENT_ID,
+    clientSecret: process.env.STRAVA_CLIENT_SECRET
+  })
+}
 function register(provider, options) {
   providers.push(provider(options))
 }
