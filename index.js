@@ -83,6 +83,15 @@ if (process.env.AZURE_DEVOPS_APP_ID) {
   })
 }
 
+if (process.env.BATTLENET_CLIENT_ID) {
+  const { default: BattleNet } = await import('@auth/core/providers/battlenet')
+
+  register(BattleNet, {
+    clientId: process.env.BATTLENET_CLIENT_ID,
+    clientSecret: process.env.BATTLENET_CLIENT_ID
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
