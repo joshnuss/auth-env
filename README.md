@@ -80,6 +80,8 @@ export const { handlers, auth } = NextAuth({ providers })
 - [IdentityServer4](https://authjs.dev/reference/core/providers/identity-server4): `IDENTITY_SERVER4_CLIENT_ID`, `IDENTITY_SERVER4_CLIENT_SECRET` & `IDENTITY_SERVER4_ISSUER`
 - [Instagram](https://authjs.dev/reference/core/providers/instagram): `INSTAGRAM_CLIENT_ID` & `INSTAGRAM_CLIENT_SECRET`
 - [Kakao](https://authjs.dev/reference/core/providers/kakao): `KAKAO_CLIENT_ID` & `KAKAO_CLIENT_SECRET`
+- [Keycloak](https://authjs.dev/reference/core/providers/keycloak): `KEYCLOAK_CLIENT_ID`, `KEYCLOAK_CLIENT_SECRET` & `KEYCLOAK_ISSUER`
+
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

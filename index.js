@@ -334,6 +334,16 @@ if (process.env.KAKAO_CLIENT_ID) {
   })
 }
 
+if (process.env.KEYCLOAK_CLIENT_ID) {
+  const { default: Keycloak } = await import('@auth/core/providers/keycloak')
+
+  register(Keycloak, {
+    clientId: process.env.KEYCLOAK_CLIENT_ID,
+    clientSecret: process.env.KEYCLOAK_CLIENT_SECRET,
+    issuer: process.env.KEYCLOAK_ISSUER
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
