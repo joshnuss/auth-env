@@ -279,6 +279,15 @@ if (process.env.GITHUB_ID) {
   })
 }
 
+if (process.env.GITLAB_CLIENT_ID) {
+  const { default: GitLab } = await import('@auth/core/providers/gitlab')
+
+  register(GitLab, {
+    clientId: process.env.GITLAB_CLIENT_ID,
+    clientSecret: process.env.GITLAB_CLIENT_SECRET
+  })
+}
+
 if (process.env.GOOGLE_CLIENT_ID) {
   const { default: Google } = await import('@auth/core/providers/google')
 

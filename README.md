@@ -68,14 +68,14 @@ export const { handlers, auth } = NextAuth({ providers })
 - [DuendeIdentityServer6](https://authjs.dev/reference/core/providers/duende-identity-server6): `DIS6_CLIENT_ID`, `DIS6_CLIENT_SECRET` & `DIS6_ISSUER`
 - [Email](https://authjs.dev/reference/core/providers/email): `EMAIL_SERVER` & `EMAIL_FROM`
 - [EveOnline](https://authjs.dev/reference/core/providers/eveonline): `EVEONLINE_CLIENT_ID` & `EVEONLINE_CLIENT_SECRET`
-- [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [Facebook](https://authjs.dev/reference/core/providers/facebook): `FACEBOOK_CLIENT_ID` & `FACEBOOK_CLIENT_SECRET`
 - [FACEIT](https://authjs.dev/reference/core/providers/faceit): `FACEIT_CLIENT_ID` & `FACEIT_CLIENT_SECRET`
 - [FourSquare](https://authjs.dev/reference/core/providers/foursquare): `FOURSQUARE_CLIENT_ID` & `FOURSQUARE_CLIENT_SECRET`
 - [FreshBooks](https://authjs.dev/reference/core/providers/freshbooks): `FRESHBOOKS_CLIENT_ID` & `FRESHBOOKS_CLIENT_SECRET`
 - [FusionAuth](https://authjs.dev/reference/core/providers/fusionauth): `FUSIONAUTH_CLIENT_ID`, `FUSIONAUTH_CLIENT_SECRET`, `FUSIONAUTH_TENANT_ID` & `FUSIONAUTH_ISSUER`
-
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
+- [GitLab](https://authjs.dev/reference/core/providers/gitlab): `GITLAB_CLIENT_ID` & `GITLAB_CLIENT_SECRET`
+- [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
