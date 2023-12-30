@@ -46,9 +46,9 @@ export const { handlers, auth } = NextAuth({ providers })
 
 ## Supported Providers
 
-- [Apple](https://authjs.dev/reference/core/providers/apple)
-- [Google](https://authjs.dev/reference/core/providers/google)
-- [GitHub](https://authjs.dev/reference/core/providers/github)
+- [Apple](https://authjs.dev/reference/core/providers/apple): `APPLE_ID` & `APPLE_SECRET`
+- [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
+- [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
 The aim is to support all providers! Please open a PR if the one you want is missing.
 
