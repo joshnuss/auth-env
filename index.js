@@ -177,6 +177,15 @@ if (process.env.DISCORD_CLIENT_ID) {
   })
 }
 
+if (process.env.DRIBBBLE_CLIENT_ID) {
+  const { default: Dribbble } = await import('@auth/core/providers/dribbble')
+
+  register(Dribbble, {
+    clientId: process.env.DRIBBBLE_CLIENT_ID,
+    clientSecret: process.env.DRIBBBLE_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
