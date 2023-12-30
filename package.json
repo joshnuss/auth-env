@@ -1,5 +1,5 @@
 {
-  "name": "authjs-env",
+  "name": "auth-env",
   "version": "1.0.2",
   "description": "Load auth.js providers based on environment variables",
   "main": "index.js",
