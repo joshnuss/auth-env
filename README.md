@@ -93,6 +93,8 @@ export const { handlers, auth } = NextAuth({ providers })
 [Notion](https://authjs.dev/reference/core/providers/notion): `NOTION_CLIENT_ID`, `NOTION_CLIENT_SECRET` & `NOTION_CLIENT_REDIRECT_URI`
 [Okta](https://authjs.dev/reference/core/providers/okta): `OKTA_CLIENT_ID`, `OKTA_CLIENT_SECRET` & `OKTA_ISSUER`
 [OneLogin](https://authjs.dev/reference/core/providers/onelogin): `ONELOGIN_CLIENT_ID` & `ONELOGIN_CLIENT_SECRET`
+[Osso](https://authjs.dev/reference/core/providers/osso): `OSSO_CLIENT_ID`, `OSSO_CLIENT_SECRET` & `OSSO_ISSUER`
+
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

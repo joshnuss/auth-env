@@ -456,6 +456,15 @@ if (process.env.ONELOGIN_CLIENT_ID) {
   })
 }
 
+if (process.env.OSSO_CLIENT_ID) {
+  const { default: Osso } = await import('@auth/core/providers/osso')
+
+  register(Osso, {
+    clientId: process.env.OSSO_CLIENT_ID,
+    clientSecret: process.env.OSSO_CLIENT_SECRET,
+    issuer: process.env.OSSO_ISSUER
+  })
+}
 function register(provider, options) {
   providers.push(provider(options))
 }
