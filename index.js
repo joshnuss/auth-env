@@ -344,6 +344,15 @@ if (process.env.KEYCLOAK_CLIENT_ID) {
   })
 }
 
+if (process.env.LINE_CLIENT_ID) {
+  const { default: LINE } = await import('@auth/core/providers/line')
+
+  register(LINE, {
+    clientId: process.env.LINE_CLIENT_ID,
+    clientSecret: process.env.LINE_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
