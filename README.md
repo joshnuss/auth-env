@@ -62,7 +62,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
-The aim is to support all providers! Please open a PR if the one you want is missing.
+The aim is to support all providers! Feel free to open a PR if anything is missing.
 
 ## License
 
