@@ -101,6 +101,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Pipedrive](https://authjs.dev/reference/core/providers/pipedrive): `PIPEDRIVE_CLIENT_ID` & `PIPEDRIVE_CLIENT_SECRET`
 - [Reddit](https://authjs.dev/reference/core/providers/reddit): `REDDIT_CLIENT_ID` & `REDDIT_CLIENT_SECRET`
 - [SaleForce](https://authjs.dev/reference/core/providers/salesforce): `SALEFORCE_CLIENT_ID` & `SALEFORCE_CLIENT_SECRET`
+- [Slack](https://authjs.dev/reference/core/providers/slack): `SLACK_CLIENT_ID` & `SLACK_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

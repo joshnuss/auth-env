@@ -530,6 +530,15 @@ if (process.env.SALEFORCE_CLIENT_ID) {
   })
 }
 
+if (process.env.SLACK_CLIENT_ID) {
+  const { default: Slack } = await import('@auth/core/providers/slack')
+
+  register(Slack, {
+    clientId: process.env.SLACK_CLIENT_ID,
+    clientSecret: process.env.SLACK_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
