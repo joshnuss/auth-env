@@ -131,6 +131,15 @@ if (process.env.BUNGIE_CLIENT_ID) {
   })
 }
 
+if (process.env.CLICKUP_CLIENT_ID) {
+  const { default: ClickUp } = await import('@auth/core/providers/click-up')
+
+  register(ClickUp, {
+    clientId: process.env.CLICKUP_CLIENT_ID,
+    clientSecret: process.env.CLICKUP_CLIENT_ID
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
