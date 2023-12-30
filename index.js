@@ -465,6 +465,16 @@ if (process.env.OSSO_CLIENT_ID) {
     issuer: process.env.OSSO_ISSUER
   })
 }
+
+if (process.env.OSU_CLIENT_ID) {
+  const { default: Osu } = await import('@auth/core/providers/osu')
+
+  register(Osu, {
+    clientId: process.env.OSU_CLIENT_ID,
+    clientSecret: process.env.OSU_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
