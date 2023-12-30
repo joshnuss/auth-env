@@ -72,6 +72,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Facebook](https://authjs.dev/reference/core/providers/facebook): `FACEBOOK_CLIENT_ID` & `FACEBOOK_CLIENT_SECRET`
 - [FACEIT](https://authjs.dev/reference/core/providers/faceit): `FACEIT_CLIENT_ID` & `FACEIT_CLIENT_SECRET`
 - [FourSquare](https://authjs.dev/reference/core/providers/foursquare): `FOURSQUARE_CLIENT_ID` & `FOURSQUARE_CLIENT_SECRET`
+- [FreshBooks](https://authjs.dev/reference/core/providers/freshbooks): `FRESHBOOKS_CLIENT_ID` & `FRESHBOOKS_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.

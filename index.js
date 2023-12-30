@@ -250,6 +250,15 @@ if (process.env.FOURSQUARE_CLIENT_ID) {
   })
 }
 
+if (process.env.FRESHBOOKS_CLIENT_ID) {
+  const { default: FreshBooks } = await import('@auth/core/providers/freshbooks')
+
+  register(FreshBooks, {
+    clientId: process.env.FRESHBOOKS_CLIENT_ID,
+    clientSecret: process.env.FRESHBOOKS_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
