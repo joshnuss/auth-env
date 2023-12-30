@@ -102,6 +102,15 @@ if (process.env.BEYOND_IDENTITY_CLIENT_ID) {
   })
 }
 
+if (process.env.BOX_CLIENT_ID) {
+  const { default: Box } = await import('@auth/core/providers/box')
+
+  register(Box, {
+    clientId: process.env.BOX_CLIENT_ID,
+    clientSecret: process.env.BOX_CLIENT_ID
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
