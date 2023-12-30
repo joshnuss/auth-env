@@ -116,6 +116,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [WorkOS](https://authjs.dev/reference/core/providers/workos): `WORKOS_CLIENT_ID`, `WORKOS_CLIENT_SECRET` & `WORKOS_ISSUER`
 - [Yandex](https://authjs.dev/reference/core/providers/yandex): `YANDEX_CLIENT_ID` & `YANDEX_CLIENT_SECRET`
 - [ZITADEL](https://authjs.dev/reference/core/providers/zitadel): `ZITADEL_CLIENT_ID` & `ZITADEL_CLIENT_SECRET`
+- [ZOHO](https://authjs.dev/reference/core/providers/zoho): `ZOHO_CLIENT_ID` & `ZOHO_CLIENT_SECRET`
 
 The aim is to support all providers.
 Feel free to open a PR if anything is missing.

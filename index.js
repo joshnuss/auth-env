@@ -666,6 +666,15 @@ if (process.env.ZITADEL_CLIENT_ID) {
   })
 }
 
+if (process.env.ZOHO_CLIENT_ID) {
+  const { default: ZOHO } = await import('@auth/core/providers/zoho')
+
+  register(ZOHO, {
+    clientId: process.env.ZOHO_CLIENT_ID,
+    clientSecret: process.env.ZOHO_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
