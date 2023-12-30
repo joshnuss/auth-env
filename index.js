@@ -27,6 +27,15 @@ if (process.env.process.env.ASGARDEO_CLIENT_ID) {
   })
 }
 
+if (process.env.process.env.ATLASSIAN_ID) {
+  const { default: atlassian } = await import('@auth/core/providers/atlassian')
+
+  register(AtlassianProvider, {
+    clientId: process.env.process.env.ATLASSIAN_ID,
+    clientSecret: process.env.process.env.ATLASSIAN_SECRET,
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
