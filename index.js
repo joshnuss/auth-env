@@ -241,6 +241,15 @@ if (process.env.FACEIT_CLIENT_ID) {
   })
 }
 
+if (process.env.FOURSQUARE_CLIENT_ID) {
+  const { default: FourSquare } = await import('@auth/core/providers/foursquare')
+
+  register(FourSquare, {
+    clientId: process.env.FOURSQUARE_CLIENT_ID,
+    clientSecret: process.env.FOURSQUARE_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
