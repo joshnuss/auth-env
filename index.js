@@ -521,6 +521,15 @@ if (process.env.REDDIT_CLIENT_ID) {
   })
 }
 
+if (process.env.SALEFORCE_CLIENT_ID) {
+  const { default: SaleForce } = await import('@auth/core/providers/saleforce')
+
+  register(SaleForce, {
+    clientId: process.env.SALEFORCE_CLIENT_ID,
+    clientSecret: process.env.SALEFORCE_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
