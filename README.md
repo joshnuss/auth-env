@@ -61,6 +61,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [ClickUp](https://authjs.dev/reference/core/providers/click-up): `CLICKUP_CLIENT_ID` & `CLICKUP_CLIENT_ID`
 - [Cognito](https://authjs.dev/reference/core/providers/cognito): `COGNITO_CLIENT_ID`, `COGNITO_CLIENT_SECRET` & `COGNITO_ISSUER`
 - [Coinbase](https://authjs.dev/reference/core/providers/coinbase): `COINBASE_CLIENT_ID` & `COINBASE_CLIENT_SECRET`
+- [DescopeProvider](https://authjs.dev/reference/core/providers/descope): `DESCOPE_ID` & `DESCOPE_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 

@@ -159,6 +159,14 @@ if (process.env.COINBASE_CLIENT_ID) {
   })
 }
 
+if (process.env.DESCOPE_ID) {
+  const { default: DescopeProvider } = await import('@auth/core/providers/descope')
+
+  register(DescopeProvider, {
+    clientId: process.env.DESCOPE_ID,
+    clientSecret: process.env.DESCOPE_SECRET
+  })
+}
 
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
