@@ -485,6 +485,14 @@ if (process.env.PASSAGE_ID) {
   })
 }
 
+if (process.env.PATREON_CLIENT_ID) {
+  const { default: Patreon } = await import('@auth/core/providers/patreon')
+
+  register(Patreon, {
+    clientId: process.env.PATREON_CLIENT_ID,
+    clientSecret: process.env.PATREON_CLIENT_SECRET
+  })
+}
 function register(provider, options) {
   providers.push(provider(options))
 }
