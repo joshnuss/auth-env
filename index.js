@@ -92,6 +92,16 @@ if (process.env.BATTLENET_CLIENT_ID) {
   })
 }
 
+if (process.env.BEYOND_IDENTITY_CLIENT_ID) {
+  const { default: BeyondIdentity } = await import('@auth/core/providers/beyondidentity')
+
+  register(BeyondIdentity, {
+    clientId: process.env.BEYOND_IDENTITY_CLIENT_ID,
+    clientSecret: process.env.BEYOND_IDENTITY_CLIENT_SECRET,
+    issuer: process.env.BEYOND_IDENTITY_ISSUER
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 

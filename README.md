@@ -54,6 +54,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [AzureAD B2C](https://authjs.dev/reference/core/providers/azure-ad-b2c): `AZURE_AD_B2C_CLIENT_ID`, `AZURE_AD_B2C_CLIENT_SECRET` & `AZURE_AD_B2C_ISSUER`
 - [Azure DevOps](https://authjs.dev/reference/core/providers/azure-devops): `AZURE_DEVOPS_APP_ID`, `AZURE_DEVOPS_CLIENT_SECRET` & `AZURE_DEVOPS_SCOPE`
 - [BattleNet](https://authjs.dev/reference/core/providers/battlenet): `BATTLENET_CLIENT_ID` & `BATTLENET_CLIENT_ID`
+- [BeyondIdentity](https://authjs.dev/reference/core/providers/beyondidentity): `BEYOND_IDENTITY_CLIENT_ID`, `BEYOND_IDENTITY_CLIENT_SECRET` & `BEYOND_IDENTITY_ISSUER`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
