@@ -638,6 +638,16 @@ if (process.env.WORKPRESS_CLIENT_ID) {
   })
 }
 
+if (process.env.WORKOS_CLIENT_ID) {
+  const { default: WorkOS } = await import('@auth/core/providers/workos')
+
+  register(WorkOS, {
+    clientId: process.env.WORKOS_CLIENT_ID,
+    clientSecret: process.env.WORKOS_CLIENT_SECRET,
+    issuer: process.env.WORKOS_ISSUER
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

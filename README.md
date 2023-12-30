@@ -113,6 +113,8 @@ export const { handlers, auth } = NextAuth({ providers })
 - [VK](https://authjs.dev/reference/core/providers/vk): `VK_CLIENT_ID` & `VK_CLIENT_SECRET`
 - [Wikimedia](https://authjs.dev/reference/core/providers/wikimedia): `WIKIMEDIA_CLIENT_ID` & `WIKIMEDIA_CLIENT_SECRET`
 - [WordPress](https://authjs.dev/reference/core/providers/wordpress): `WORKPRESS_CLIENT_ID` & `WORKPRESS_CLIENT_SECRET`
+- [WorkOS](https://authjs.dev/reference/core/providers/workos): `WORKOS_CLIENT_ID`, `WORKOS_CLIENT_SECRET` & `WORKOS_ISSUER`
+
 
 The aim is to support all providers.
 Feel free to open a PR if anything is missing.
