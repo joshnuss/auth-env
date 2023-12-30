@@ -88,7 +88,7 @@ if (process.env.BATTLENET_CLIENT_ID) {
 
   register(BattleNet, {
     clientId: process.env.BATTLENET_CLIENT_ID,
-    clientSecret: process.env.BATTLENET_CLIENT_ID
+    clientSecret: process.env.BATTLENET_CLIENT_SECRET
   })
 }
 
@@ -107,7 +107,7 @@ if (process.env.BOX_CLIENT_ID) {
 
   register(Box, {
     clientId: process.env.BOX_CLIENT_ID,
-    clientSecret: process.env.BOX_CLIENT_ID
+    clientSecret: process.env.BOX_CLIENT_SECRET
   })
 }
 
