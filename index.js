@@ -111,6 +111,16 @@ if (process.env.BOX_CLIENT_ID) {
   })
 }
 
+if (process.env.BOXYHQ_SAML_CLIENT_ID) {
+  const { default: BoxyHQ } = await import('@auth/core/providers/boxyhq-saml')
+
+  register(BoxyHQ, {
+    clientId: process.env.BOXYHQ_SAML_CLIENT_ID,
+    clientSecret: process.env.BOXYHQ_SAML_CLIENT_SECRET,
+    issuer: process.env.BOXYHQ_SAML_ISSUER
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
