@@ -390,6 +390,16 @@ if (process.env.MASTODON_CLIENT_ID) {
   })
 }
 
+if (process.env.MATTERMOST_CLIENT_ID) {
+  const { default: Mattermost } = await import('@auth/core/providers/mattermost')
+
+  register(Mattermost, {
+    clientId: process.env.MATTERMOST_CLIENT_ID,
+    clientSecret: process.env.MATTERMOST_CLIENT_SECRET,
+    issuer: process.env.MATTERMOST_ISSUER
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
