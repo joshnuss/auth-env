@@ -593,6 +593,15 @@ if (process.env.TWITCH_CLIENT_ID) {
   })
 }
 
+if (process.env.TWITTER_CLIENT_ID) {
+  const { default: Twitter } = await import('@auth/core/providers/twitter')
+
+  register(Twitter, {
+    clientId: process.env.TWITTER_CLIENT_ID,
+    clientSecret: process.env.TWITTER_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
