@@ -1,12 +1,24 @@
 # authjs-env
 
-Load [Auth.js](https://authjs.dev) providers dynamically, via environment variables.
+Load [Auth.js](https://authjs.dev) providers dynamically, by detecting environment variables.
 
 ## Usage
 
-Define env vars in `.env`, `.env.development` or in your hosting settings.
+Install the package:
+
+```sh
+pnpm install -D authjs-env
+```
+
+Define env vars in your `.env` or in your hosting settings.
 
 For example, for Github, define a `GITHUB_ID` & `GITHUB_SECRET`.
+
+```
+# in .env
+GITHUB_ID=...
+GITHUB_SECRET=...
+```
 
 ### SvelteKit
 
