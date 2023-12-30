@@ -26,11 +26,9 @@ Import `providers` in `src/hooks.server.js`:
 
 ```javascript
 import { SvelteKitAuth } from "@auth/sveltekit"
-import { providers } from 'authjs-env'
+import { providers } from "authjs-env"
 
-export const handle = SvelteKitAuth({
-  providers
-})
+export const handle = SvelteKitAuth({ providers })
 ```
 
 ### React
@@ -39,7 +37,7 @@ Import `providers` in `auth.ts`:
 
 ```javascript
 import NextAuth from "next-auth"
-import { providers } from 'authjs-env'
+import { providers } from "authjs-env"
 
 export const { handlers, auth } = NextAuth({ providers })
 ```
