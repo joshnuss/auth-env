@@ -204,6 +204,16 @@ if (process.env.DIS6_CLIENT_ID) {
     issuer: process.env.DIS6_ISSUER
   })
 }
+
+if (process.env.EMAIL_SERVER) {
+  const { default: EmailProvider } = await import('@auth/core/providers/email')
+
+  register(EmailProvider, {
+    server: process.env.EMAIL_SERVER,
+    from: process.env.EMAIL_FROM
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
