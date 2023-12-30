@@ -1,11 +1,11 @@
 export const providers = []
 
-if (process.env.42_SCHOOL_CLIENT_ID) {
-  const { default: 42School } = await import('@auth/core/providers/42-school')
+if (process.env['42_SCHOOL_CLIENT_ID']) {
+  const { default: Oauth42School } = await import('@auth/core/providers/42-school')
 
-  register(42School, {
-    clientId: process.env.42_SCHOOL_CLIENT_ID,
-    clientSecret: process.env.42_SCHOOL_CLIENT_SECRET
+  register(Oauth42School, {
+    clientId: process.env['42_SCHOOL_CLIENT_ID'],
+    clientSecret: process.env['42_SCHOOL_CLIENT_SECRET']
   })
 }
 
