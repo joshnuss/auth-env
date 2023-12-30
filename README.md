@@ -89,7 +89,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Mattermost](https://authjs.dev/reference/core/providers/mattermost): `MATTERMOST_CLIENT_ID`, `MATTERMOST_CLIENT_SECRET` & `MATTERMOST_ISSUER`
 - [Medium](https://authjs.dev/reference/core/providers/medium): `MEDIUM_CLIENT_ID` & `MEDIUM_CLIENT_SECRET`
 [Naver](https://authjs.dev/reference/core/providers/naver): `NAVER_CLIENT_ID` & `NAVER_CLIENT_SECRET`
-
+[Netlify](https://authjs.dev/reference/core/providers/netlify): `NETLIFY_CLIENT_ID` & `NETLIFY_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 

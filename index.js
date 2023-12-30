@@ -418,6 +418,14 @@ if (process.env.NAVER_CLIENT_ID) {
   })
 }
 
+if (process.env.NETLIFY_CLIENT_ID) {
+  const { default: Netlify } = await import('@auth/core/providers/netlify')
+
+  register(Netlify, {
+    clientId: process.env.NETLIFY_CLIENT_ID,
+    clientSecret: process.env.NETLIFY_CLIENT_SECRET
+  })
+}
 function register(provider, options) {
   providers.push(provider(options))
 }
