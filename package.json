@@ -10,7 +10,7 @@
   "keywords": ["authjs", "oauth", "svelte", "react", "next-auth"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshnuss/authjs-env"
+    "url": "https://github.com/joshnuss/auth-env"
   },
   "author": "",
   "license": "MIT",

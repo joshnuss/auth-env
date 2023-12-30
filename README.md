@@ -1,4 +1,4 @@
-# authjs-env
+# auth-env
 
 Load [Auth.js](https://authjs.dev) providers dynamically, by detecting environment variables.
 
