@@ -475,6 +475,16 @@ if (process.env.OSU_CLIENT_ID) {
   })
 }
 
+if (process.env.PASSAGE_ID) {
+  const { default: Passage } = await import('@auth/core/providers/passage')
+
+  register(Passage, {
+    clientId: process.env.PASSAGE_ID,
+    clientSecret: process.env.PASSAGE_SECRET,
+    issuer: process.env.PASSAGE_ISSUER
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

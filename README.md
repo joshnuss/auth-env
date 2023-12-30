@@ -95,6 +95,8 @@ export const { handlers, auth } = NextAuth({ providers })
 - [OneLogin](https://authjs.dev/reference/core/providers/onelogin): `ONELOGIN_CLIENT_ID` & `ONELOGIN_CLIENT_SECRET`
 - [Osso](https://authjs.dev/reference/core/providers/osso): `OSSO_CLIENT_ID`, `OSSO_CLIENT_SECRET` & `OSSO_ISSUER`
 - [Osu](https://authjs.dev/reference/core/providers/osu): `OSU_CLIENT_ID` & `OSU_CLIENT_SECRET`
+- [Passage](https://authjs.dev/reference/core/providers/passage): `PASSAGE_ID`, `PASSAGE_SECRET` & `PASSAGE_ISSUER`
+
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
