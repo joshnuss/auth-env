@@ -297,6 +297,15 @@ if (process.env.GOOGLE_CLIENT_ID) {
   })
 }
 
+if (process.env.HUBSPOT_CLIENT_ID) {
+  const { default: HubSpot } = await import('@auth/core/providers/hubspot')
+
+  register(HubSpot, {
+    clientId: process.env.HUBSPOT_CLIENT_ID,
+    clientSecret: process.env.HUBSPOT_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

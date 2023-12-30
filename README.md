@@ -76,6 +76,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 - [GitLab](https://authjs.dev/reference/core/providers/gitlab): `GITLAB_CLIENT_ID` & `GITLAB_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
+- [HubSpot](https://authjs.dev/reference/core/providers/hubspot): `HUBSPOT_CLIENT_ID` & `HUBSPOT_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
