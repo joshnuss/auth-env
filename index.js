@@ -315,6 +315,16 @@ if (process.env.IDENTITY_SERVER4_CLIENT_ID) {
     issuer: process.env.IDENTITY_SERVER4_ISSUER,
   })
 }
+
+if (process.env.INSTAGRAM_CLIENT_ID) {
+  const { default: Instagram } = await import('@auth/core/providers/instagram')
+
+  register(Instagram, {
+    clientId: process.env.INSTAGRAM_CLIENT_ID,
+    clientSecret: process.env.INSTAGRAM_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
