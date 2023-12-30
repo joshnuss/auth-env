@@ -232,6 +232,15 @@ if (process.env.FACEBOOK_CLIENT_ID) {
   })
 }
 
+if (process.env.FACEIT_CLIENT_ID) {
+  const { default: FACEIT } = await import('@auth/core/providers/faceit')
+
+  register(FACEIT, {
+    clientId: process.env.FACEIT_CLIENT_ID,
+    clientSecret: process.env.FACEIT_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
