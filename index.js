@@ -1,4 +1,5 @@
-export const providers = []
+/** @type {import('@auth/core/providers').Provider[]} */
+export const providers = [];
 
 if (process.env['42_SCHOOL_CLIENT_ID']) {
   const { default: Oauth42School } = await import('@auth/core/providers/42-school')
@@ -380,8 +381,9 @@ if (process.env.MAILRU_CLIENT_ID) {
   })
 }
 
+/** @type {import('./index.js').register} */
 function register(provider, options) {
-  providers.push(provider(options))
+    providers.push(provider(options));
 }
 
 if (providers.length == 0) {
