@@ -50,7 +50,7 @@ if (process.env.AUTHENTIK_CLIENT_ID) {
 
   register(Authentik, {
     clientId: process.env.AUTHENTIK_CLIENT_ID,
-    clientSecret: process.env.AUTHENTIK_CLIENT_ID
+    clientSecret: process.env.AUTHENTIK_CLIENT_SECRET
   })
 }
 
@@ -59,7 +59,17 @@ if (process.env.AZURE_AD_CLIENT_ID) {
 
   register(AzureAd, {
     clientId: process.env.AZURE_AD_CLIENT_ID,
-    clientSecret: process.env.AZURE_AD_CLIENT_ID
+    clientSecret: process.env.AZURE_AD_CLIENT_SECRET
+  })
+}
+
+if (process.env."") {
+  const { default: AzureADB2C } = await import('@auth/core/providers/azure-ad-b2c')
+
+  register(AzureADB2C, {
+    clientId: process.env.AZURE_AD_B2C_CLIENT_ID,
+    clientSecret: process.env.AZURE_AD_B2C_CLIENT_SECRET,
+    issuer: process.env.AZURE_AD_B2C_ISSUER
   })
 }
 
