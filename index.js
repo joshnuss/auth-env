@@ -140,6 +140,16 @@ if (process.env.CLICKUP_CLIENT_ID) {
   })
 }
 
+if (process.env.COGNITO_CLIENT_ID) {
+  const { default: Cognito } = await import('@auth/core/providers/cognito')
+
+  register(Cognito, {
+    clientId: process.env.COGNITO_CLIENT_ID,
+    clientSecret: process.env.COGNITO_CLIENT_SECRET,
+    issuer: process.env.COGNITO_ISSUER
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
