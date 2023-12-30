@@ -1,5 +1,14 @@
 export const providers = []
 
+if (process.env.42_SCHOOL_CLIENT_ID) {
+  const { default: 42-school } = await import('@auth/core/providers/42-school')
+
+  register(42School, {
+    clientId: process.env.42_SCHOOL_CLIENT_ID,
+    clientSecret: process.env.42_SCHOOL_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
