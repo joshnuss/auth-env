@@ -503,6 +503,15 @@ if (process.env.PINTEREST_CLIENT_ID) {
   })
 }
 
+if (process.env.PIPEDRIVE_CLIENT_ID) {
+  const { default: Pipedrive } = await import('@auth/core/providers/pipedrive')
+
+  register(Pipedrive, {
+    clientId: process.env.PIPEDRIVE_CLIENT_ID,
+    clientSecret: process.env.PIPEDRIVE_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
