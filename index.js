@@ -493,6 +493,16 @@ if (process.env.PATREON_CLIENT_ID) {
     clientSecret: process.env.PATREON_CLIENT_SECRET
   })
 }
+
+if (process.env.PINTEREST_CLIENT_ID) {
+  const { default: Pinterest } = await import('@auth/core/providers/pinterest')
+
+  register(Pinterest, {
+    clientId: process.env.PINTEREST_CLIENT_ID,
+    clientSecret: process.env.PINTEREST_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

@@ -97,6 +97,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Osu](https://authjs.dev/reference/core/providers/osu): `OSU_CLIENT_ID` & `OSU_CLIENT_SECRET`
 - [Passage](https://authjs.dev/reference/core/providers/passage): `PASSAGE_ID`, `PASSAGE_SECRET` & `PASSAGE_ISSUER`
 - [Patreon](https://authjs.dev/reference/core/providers/patreon): `PATREON_CLIENT_ID` & `PATREON_CLIENT_SECRET`
+- [Pinterest](https://authjs.dev/reference/core/providers/pinterest): `PINTEREST_CLIENT_ID` & `PINTEREST_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
