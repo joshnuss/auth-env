@@ -60,6 +60,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Bungie](https://authjs.dev/reference/core/providers/bungie): `BUNGIE_CLIENT_ID`, `BUNGIE_CLIENT_SECRET` & `BUNGIE_API_KEY`
 - [ClickUp](https://authjs.dev/reference/core/providers/click-up): `CLICKUP_CLIENT_ID` & `CLICKUP_CLIENT_ID`
 - [Cognito](https://authjs.dev/reference/core/providers/cognito): `COGNITO_CLIENT_ID`, `COGNITO_CLIENT_SECRET` & `COGNITO_ISSUER`
+- [Coinbase](https://authjs.dev/reference/core/providers/coinbase): `COINBASE_CLIENT_ID` & `COINBASE_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 

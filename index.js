@@ -136,7 +136,7 @@ if (process.env.CLICKUP_CLIENT_ID) {
 
   register(ClickUp, {
     clientId: process.env.CLICKUP_CLIENT_ID,
-    clientSecret: process.env.CLICKUP_CLIENT_ID
+    clientSecret: process.env.CLICKUP_CLIENT_SECRET
   })
 }
 
@@ -149,6 +149,16 @@ if (process.env.COGNITO_CLIENT_ID) {
     issuer: process.env.COGNITO_ISSUER
   })
 }
+
+if (process.env.COINBASE_CLIENT_ID) {
+  const { default: Coinbase } = await import('@auth/core/providers/coinbase')
+
+  register(Coinbase, {
+    clientId: process.env.COINBASE_CLIENT_ID,
+    clientSecret: process.env.COINBASE_CLIENT_SECRET
+  })
+}
+
 
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
