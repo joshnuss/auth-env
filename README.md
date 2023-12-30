@@ -111,6 +111,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Twitter](https://authjs.dev/reference/core/providers/twitter): `TWITTER_CLIENT_ID` & `TWITTER_CLIENT_SECRET`
 - [UnitedEffects](https://authjs.dev/reference/core/providers/united-effects): `UE_CLIENT_ID` & `UE_CLIENT_SECRET`
 - [VK](https://authjs.dev/reference/core/providers/vk): `VK_CLIENT_ID` & `VK_CLIENT_SECRET`
+- [Wikimedia](https://authjs.dev/reference/core/providers/wikimedia): `WIKIMEDIA_CLIENT_ID` & `WIKIMEDIA_CLIENT_SECRET`
 
 The aim is to support all providers.
 Feel free to open a PR if anything is missing.

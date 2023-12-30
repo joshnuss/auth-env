@@ -611,6 +611,15 @@ if (process.env.UE_CLIENT_ID) {
   })
 }
 
+if (process.env.WIKIMEDIA_CLIENT_ID) {
+  const { default: Wikimedia } = await import('@auth/core/providers/wikimedia')
+
+  register(Wikimedia, {
+    clientId: process.env.WIKIMEDIA_CLIENT_ID,
+    clientSecret: process.env.WIKIMEDIA_CLIENT_SECRET
+  })
+}
+
 if (process.env.VK_CLIENT_ID) {
   const { default: VK } = await import('@auth/core/providers/vk')
 
