@@ -223,6 +223,15 @@ if (process.env.EVEONLINE_CLIENT_ID) {
   })
 }
 
+if (process.env.FACEBOOK_CLIENT_ID) {
+  const { default: Facebook } = await import('@auth/core/providers/facebook')
+
+  register(Facebook, {
+    clientId: process.env.FACEBOOK_CLIENT_ID,
+    clientSecret: process.env.FACEBOOK_CLIENT_SECRET
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 

@@ -69,6 +69,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Email](https://authjs.dev/reference/core/providers/email): `EMAIL_SERVER` & `EMAIL_FROM`
 - [EveOnline](https://authjs.dev/reference/core/providers/eveonline): `EVEONLINE_CLIENT_ID` & `EVEONLINE_CLIENT_SECRET`
 - [Google](https://authjs.dev/reference/core/providers/google): `GOOGLE_CLIENT_ID` & `GOOGLE_CLIENT_SECRET`
+- [Facebook](https://authjs.dev/reference/core/providers/facebook): `FACEBOOK_CLIENT_ID` & `FACEBOOK_CLIENT_SECRET`
 - [GitHub](https://authjs.dev/reference/core/providers/github): `GITHUB_ID` & `GITHUB_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
