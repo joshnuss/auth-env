@@ -566,6 +566,15 @@ if (process.env.TIKTOK_CLIENT_KEY) {
   })
 }
 
+if (process.env.TODOIST_CLIENT_ID) {
+  const { default: Todoist } = await import('@auth/core/providers/todoist')
+
+  register(Todoist, {
+    clientId: process.env.TODOIST_CLIENT_ID,
+    clientSecret: process.env.TODOIST_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
