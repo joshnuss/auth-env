@@ -512,6 +512,15 @@ if (process.env.PIPEDRIVE_CLIENT_ID) {
   })
 }
 
+if (process.env.REDDIT_CLIENT_ID) {
+  const { default: Reddit } = await import('@auth/core/providers/reddit')
+
+  register(Reddit, {
+    clientId: process.env.REDDIT_CLIENT_ID,
+    clientSecret: process.env.REDDIT_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

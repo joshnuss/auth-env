@@ -99,6 +99,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Patreon](https://authjs.dev/reference/core/providers/patreon): `PATREON_CLIENT_ID` & `PATREON_CLIENT_SECRET`
 - [Pinterest](https://authjs.dev/reference/core/providers/pinterest): `PINTEREST_CLIENT_ID` & `PINTEREST_CLIENT_SECRET`
 - [Pipedrive](https://authjs.dev/reference/core/providers/pipedrive): `PIPEDRIVE_CLIENT_ID` & `PIPEDRIVE_CLIENT_SECRET`
+- [Reddit](https://authjs.dev/reference/core/providers/reddit): `REDDIT_CLIENT_ID` & `REDDIT_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
