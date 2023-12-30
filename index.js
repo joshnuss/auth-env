@@ -353,6 +353,15 @@ if (process.env.LINE_CLIENT_ID) {
   })
 }
 
+if (process.env.LINKEDIN_CLIENT_ID) {
+  const { default: LinkedIn } = await import('@auth/core/providers/linkedin')
+
+  register(LinkedIn, {
+    clientId: process.env.LINKEDIN_CLIENT_ID,
+    clientSecret: process.env.LINKEDIN_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }

@@ -82,6 +82,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Kakao](https://authjs.dev/reference/core/providers/kakao): `KAKAO_CLIENT_ID` & `KAKAO_CLIENT_SECRET`
 - [Keycloak](https://authjs.dev/reference/core/providers/keycloak): `KEYCLOAK_CLIENT_ID`, `KEYCLOAK_CLIENT_SECRET` & `KEYCLOAK_ISSUER`
 - [LINE](https://authjs.dev/reference/core/providers/line): `LINE_CLIENT_ID` & `LINE_CLIENT_SECRET`
+- [LinkedIn](https://authjs.dev/reference/core/providers/linkedin): `LINKEDIN_CLIENT_ID` & `LINKEDIN_CLIENT_SECRET`
 
 The aim is to support all providers! Feel free to open a PR if anything is missing.
 
