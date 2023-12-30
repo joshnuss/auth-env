@@ -49,6 +49,7 @@ export const { handlers, auth } = NextAuth({ providers })
 - [Asgardeo](https://authjs.dev/reference/core/providers/asgardeo): `ASGARDEO_CLIENT_ID` & `ASGARDEO_CLIENT_SECRET`
 - [Atlassian](https://authjs.dev/reference/core/providers/atlassian): `ATLASSIAN_ID` & `ATLASSIAN_SECRET`
 - [Auth0](https://authjs.dev/reference/core/providers/auth0): `AUTH0_ID` & `AUTH0_SECRET`
+- [Authentik](https://authjs.dev/reference/core/providers/authentik): `AUTHENTIK_CLIENT_ID` & `AUTHENTIK_CLIENT_ID`
 - [Google](https://authjs.dev/reference/core/providers/google)
 - [GitHub](https://authjs.dev/reference/core/providers/github)
 

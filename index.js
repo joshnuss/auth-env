@@ -45,6 +45,15 @@ if (process.env.AUTH0_ID) {
   })
 }
 
+if (process.env.AUTHENTIK_CLIENT_ID) {
+  const { default: Authentik } = await import('@auth/core/providers/authentik')
+
+  register(Authentik, {
+    clientId: process.env.AUTHENTIK_CLIENT_ID,
+    clientSecret: process.env.AUTHENTIK_CLIENT_ID
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
