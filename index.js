@@ -648,6 +648,15 @@ if (process.env.WORKOS_CLIENT_ID) {
   })
 }
 
+if (process.env.YANDEX_CLIENT_ID) {
+  const { default: Yandex } = await import('@auth/core/providers/yandex')
+
+  register(Yandex, {
+    clientId: process.env.YANDEX_CLIENT_ID,
+    clientSecret: process.env.YANDEX_CLIENT_SECRET
+  })
+}
+
 function register(provider, options) {
   providers.push(provider(options))
 }
