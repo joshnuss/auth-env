@@ -259,6 +259,17 @@ if (process.env.FRESHBOOKS_CLIENT_ID) {
   })
 }
 
+if (process.env.FUSIONAUTH_CLIENT_ID) {
+  const { default: FusionAuth } = await import('@auth/core/providers/fusionauth')
+
+  register(FusionAuth, {
+    clientId: process.env.FUSIONAUTH_CLIENT_ID,
+    clientSecret: process.env.FUSIONAUTH_CLIENT_SECRET,
+    tenantId: process.env.FUSIONAUTH_TENANT_ID,
+    issuer: process.env.FUSIONAUTH_ISSUER
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
