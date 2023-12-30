@@ -54,6 +54,15 @@ if (process.env.AUTHENTIK_CLIENT_ID) {
   })
 }
 
+if (process.env.AZURE_AD_CLIENT_ID) {
+  const { default: AzureAd } = await import('@auth/core/providers/azure-ad')
+
+  register(AzureAd, {
+    clientId: process.env.AZURE_AD_CLIENT_ID,
+    clientSecret: process.env.AZURE_AD_CLIENT_ID
+  })
+}
+
 if (process.env.GITHUB_ID) {
   const { default: GitHub } = await import('@auth/core/providers/github')
 
