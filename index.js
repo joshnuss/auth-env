@@ -480,5 +480,5 @@ function register(provider, options) {
 }
 
 if (providers.length == 0) {
-  throw new Error('No Auth.js providers configured.\n\nThis is happening because environment variables are missing.\n\nFor more information on configuring your provider, see: https://github.com/joshnuss/authjs-env?tab=readme-ov-file#supported-providers')
+  throw new Error('No Auth.js providers configured.\n\nThis is happening because environment variables are missing.\n\nFor more information on configuring your provider, see: https://github.com/joshnuss/authjs-env#supported-providers')
 }
