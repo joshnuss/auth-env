@@ -7,7 +7,7 @@ Load [Auth.js](https://authjs.dev) providers dynamically, by detecting environme
 Install the package:
 
 ```sh
-pnpm install -D authjs-env
+pnpm install -D auth-env
 ```
 
 Define env vars in your `.env` or in your hosting settings.
@@ -26,7 +26,7 @@ Import `providers` in `src/hooks.server.js`:
 
 ```javascript
 import { SvelteKitAuth } from "@auth/sveltekit"
-import { providers } from "authjs-env"
+import { providers } from "auth-env"
 
 export const handle = SvelteKitAuth({ providers })
 ```
@@ -37,7 +37,7 @@ Import `providers` in `auth.ts`:
 
 ```javascript
 import NextAuth from "next-auth"
-import { providers } from "authjs-env"
+import { providers } from "auth-env"
 
 export const { handlers, auth } = NextAuth({ providers })
 ```
